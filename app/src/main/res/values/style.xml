@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Title1" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_20sp</item>
+    </style>
+
+    <style name="ButtonText" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_14sp</item>
+    </style>
+
+    <style name="StyleButton" parent="Widget.Material3.Button">
+        <item name="android:textAppearance">@style/ButtonText</item>
+        <item name="cornerRadius">@dimen/margin_half</item>
+    </style>
+
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/shadows"
+    android:orientation="vertical"
+    tools:context=".ui.binFinder.BinFinderFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvBin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/margin_half"
+        android:layout_marginTop="@dimen/margin_half"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:itemCount="8"
+        tools:listitem="@layout/item_bin_history"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/tv_empty_placeholder_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_main"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_info"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/history_empty"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_20sp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+</LinearLayout>

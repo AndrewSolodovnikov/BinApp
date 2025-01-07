@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/binFinderFragment">
+
+    <fragment
+        android:id="@+id/binFinderFragment"
+        android:name="com.sol.binapp.ui.binFinder.BinFinderFragment"
+        android:label="fragment_bin_finder"
+        tools:layout="@layout/fragment_bin_finder" >
+        <action
+            android:id="@+id/action_binFinderFragment_to_binBankInfoFragment"
+            app:destination="@id/binBankInfoFragment" />
+        <argument
+            android:name="binNumber"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/binBankInfoFragment"
+        android:name="com.sol.binapp.ui.binBankInfo.BinBankInfoFragment"
+        android:label="fragment_bin_bank_info"
+        tools:layout="@layout/fragment_bin_bank_info" >
+        <argument
+            android:name="binNumber"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/binHistoryFragment"
+        android:name="com.sol.binapp.ui.binHistory.BinHistoryFragment"
+        android:label="fragment_bin_history"
+        tools:layout="@layout/fragment_bin_history" >
+        <action
+            android:id="@+id/action_binHistoryFragment_to_binBankInfoFragment"
+            app:destination="@id/binBankInfoFragment" />
+    </fragment>
+</navigation>

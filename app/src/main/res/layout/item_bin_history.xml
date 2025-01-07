@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_bin_history"
+    android:layout_width="match_parent"
+    android:layout_height="46dp"
+    android:layout_margin="@dimen/margin_half"
+    android:layout_marginEnd="@dimen/margin_half"
+    android:background="@drawable/rounded_background"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_country_emoji_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_main"
+        android:layout_marginTop="@dimen/margin_half"
+        android:textAppearance="@style/Title1"
+        android:textColor="@color/white"
+        tools:text="🇷🇺" />
+
+    <TextView
+        android:id="@+id/tv_bin_number_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_half"
+        android:layout_marginTop="@dimen/margin_half"
+        android:textAppearance="@style/Title1"
+        android:textColor="@color/white"
+        tools:text="45717360" />
+
+</LinearLayout>

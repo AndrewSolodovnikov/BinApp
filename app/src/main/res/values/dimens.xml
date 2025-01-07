@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <dimen name="length_0dp">0dp</dimen>
+    <dimen name="margin_quarter">4dp</dimen>
+    <dimen name="margin_half">8dp</dimen>
+    <dimen name="margin_main">16dp</dimen>
+    <dimen name="length_48dp">52dp</dimen>
+    <dimen name="length_80dp">80dp</dimen>
+    <dimen name="length_152dp">152dp</dimen>
+
+    <dimen name="text_size_14sp">14sp</dimen>
+    <dimen name="text_size_16sp">16sp</dimen>
+    <dimen name="text_size_20sp">20sp</dimen>
+</resources>

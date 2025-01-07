@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/shadows"
+    android:orientation="vertical"
+    tools:context=".ui.binBankInfo.BinBankInfoFragment">
+
+    <LinearLayout
+        android:id="@+id/tv_empty_placeholder_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_main"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_bin_number_description"
+            android:layout_width="@dimen/length_152dp"
+            android:layout_height="wrap_content"
+            android:text="@string/bin"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_20sp" />
+
+        <TextView
+            android:id="@+id/tv_bin_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_20sp"
+            tools:text="123456" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_main"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_bank_name_description"
+            android:layout_width="@dimen/length_152dp"
+            android:layout_height="wrap_content"
+            android:text="@string/bank"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16sp" />
+
+        <TextView
+            android:id="@+id/tv_bank_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16sp"
+            tools:text="Joint Stock Company Alfa-Bank!!!!!!!!!!!!!!!!!!!" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_main"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_country"
+            android:layout_width="@dimen/length_152dp"
+            android:layout_height="wrap_content"
+            android:text="@string/country"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16sp" />
+
+        <TextView
+            android:id="@+id/tv_country_emoji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16sp"
+            tools:text="🇷🇺" />
+
+        <TextView
+            android:id="@+id/tv_country_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_half"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16sp"
+            tools:text="Russian Federation (the)" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_main"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_currency_description"
+            android:layout_width="@dimen/length_152dp"
+            android:layout_height="wrap_content"
+            android:text="@string/currency"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16sp" />
+
+        <TextView
+            android:id="@+id/tv_currency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16sp"
+            tools:text="RUB" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_main"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_coordinates_description"
+            android:layout_width="@dimen/length_152dp"
+            android:layout_height="wrap_content"
+            android:text="@string/coordinate"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16sp" />
+
+        <TextView
+            android:id="@+id/tv_coordinates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16sp"
+            tools:text="60.0 / 10.0" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_open_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_main"
+        android:text="@string/map"
+        android:textColor="@color/blue" />
+
+    <LinearLayout
+        android:id="@+id/tv_empty_placeholder_bank_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_main"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_downloading" />
+
+        <TextView
+            android:id="@+id/tv_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loading"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_20sp" />
+    </LinearLayout>
+
+</LinearLayout>
